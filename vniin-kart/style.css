@@ -1,0 +1,70 @@
+/* === Reset === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fb;
+}
+
+/* === ÐšÐ°Ñ€Ñ‚ ===
+   Ð¢Ð¾Ð¾Ñ†Ð¾Ð»Ð¾Ð»: box-sizing: content-box Ð±Ð°Ð¹ÑÐ°Ð½ Ð±Ð¾Ð» Ð½Ð¸Ð¹Ñ‚ Ó©Ñ€Ð³Ó©Ð½
+   320 + 24Ã—2 (padding) + 1Ã—2 (border) = 370px Ð±Ð¾Ð»Ð½Ð¾.
+   border-box Ñ‚ÑƒÐ» width: 320px Ð½ÑŒ padding, border-Ð¸Ð¹Ð³ Ð±Ð°Ð³Ñ‚Ð°Ð°Ð½Ð°. */
+.price-card {
+  width: 320px;
+  margin: 40px auto;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #d9deea;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(29, 53, 87, 0.12);
+}
+
+.price-card__title {
+  margin: 0 0 8px;
+}
+
+.price-card__price {
+  margin: 0 0 16px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e63946;
+}
+
+/* === Ð–Ð°Ð³ÑÐ°Ð°Ð»Ñ‚ === */
+.price-card__features {
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.price-card__features li {
+  padding: 8px 0;
+  border-bottom: 1px solid #e5e8f0;
+}
+
+.price-card__features li:last-child {
+  border-bottom: none;
+}
+
+/* === Ð¢Ð¾Ð²Ñ‡ ===
+   display: block â€” Ð±Ò¯Ñ‚ÑÐ½ Ó©Ñ€Ð³Ó©Ð½ ÑÐ·ÑÐ»Ð½Ñ (inline Ð±Ð¾Ð» padding Ð´ÑÑÐ´/Ð´Ð¾Ð¾Ð´
+   Ñ‚Ð°Ð»Ð´ Ð·ÑÑ€Ð³ÑÐ»Ð´ÑÑ Ð¼Ó©Ñ€Ð¸Ð¹Ð³ Ñ‚Ò¯Ð»Ñ…ÑÑ…Ð³Ò¯Ð¹, Ó©Ñ€Ð³Ó©Ð½ Ð½ÑŒ Ñ‚ÐµÐºÑÑ‚ÑÑÑ€ Ñ…ÑÐ·Ð³Ð°Ð°Ñ€Ð»Ð°Ð³Ð´Ð°Ð½Ð°). */
+.price-card__button {
+  display: block;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background: #1d3557;
+  border-radius: 8px;
+}
+
+.price-card__button:hover {
+  background: #e63946;
+}

@@ -1,0 +1,112 @@
+/* === Reset and Base Styles === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #1b263b;
+}
+
+a {
+
+  color: inherit;
+}
+ /* === Header Styles === */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1b263b;
+  color: #ffffff;
+  padding: 16px 32px;
+  
+}
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* === Navigation Styles === */
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+.nav-list a {
+    text-decoration: none;
+}
+.nav-list a:hover {
+    text-decoration: underline;
+}
+.hero {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #265d93;
+  color: #ffffff;
+}
+.hero h1 {
+  font-size: 2.75rem;
+  margin: 0 0 8px;
+}
+/* === button Styles === */
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  background-color: #e07a00;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: #ff9f1c;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 20px;
+  
+}
+.feature{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 250px;
+  background-color: #f1f4f9;
+  padding: 24px;
+  border-radius: 12px;
+}
+.feature h2 {
+  margin-top: 0 ;
+}
+.feature .btn {
+  margin-top: auto;
+  align-self:flex-start;
+}
+.site-footer {
+  display: flex;
+  gap: 24px;
+  padding: 32px;
+  color: #e0e1dd;
+  background-color: #0d1b2a;
+}
+.footer-col {
+  flex: 1;
+}
+.footer-col h3 {
+  margin-top: 0;
+}
